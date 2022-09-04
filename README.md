@@ -1,6 +1,6 @@
 # JsxNik
 
-Create Mapnik configuration with JSX and included code autocompletion and type validation support, thanks to TypeScript.
+Create [Mapnik](https://mapnik.org) configuration with [JSX](https://facebook.github.io/jsx/) and included code autocompletion and type validation support, thanks to [TypeScript](https://www.typescriptlang.org).
 
 ## Usage
 
@@ -26,16 +26,25 @@ Create Mapnik configuration with JSX and included code autocompletion and type v
          <Rule>
            <PolygonSymbolizer fill="green" />
          </Rule>
+
+         {/* this is a comment */}
+
+         {/* including markup as a string */}
+         <Raw>{`
+           <Rule>
+             <PolygonSymbolizer fill="green" />
+           </Rule>
+         `}</Raw>
        </Style>
 
        <Layer srs="+init=epsg:3857">
-         <StyleName>some_style</StyleName>
+        <StyleName>some_style</StyleName>
 
-         <Datasource base="db">
+        <Datasource base="db">
           <Parameter name="table">
             some_table
           </Parameter>
-         </Datasource>
+        </Datasource>
        </Layer>
      </Map>
    );
