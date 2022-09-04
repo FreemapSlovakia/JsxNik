@@ -6,7 +6,7 @@ export function serialize(obj: JSX.Element): string {
       .join("");
   }
 
-  if (!obj || typeof obj === "boolean") {
+  if (obj == null || typeof obj === "boolean") {
     return "";
   }
 
@@ -23,6 +23,10 @@ export function serialize(obj: JSX.Element): string {
 
   if (elem === undefined) {
     return text;
+  }
+
+  if (elem === "Raw") {
+    return Array.isArray(children) ?  children.join("") : (children ?? "");
   }
 
   const opening =

@@ -19,6 +19,10 @@ declare global {
   }
 }
 
+export const Raw = "Raw" as unknown as (props: {
+  children: JSX.Element;
+}) => JSX.Element;
+
 export const Rule = "Rule" as unknown as (props: {
   children: JSX.Element;
 }) => JSX.Element;
