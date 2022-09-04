@@ -4,13 +4,16 @@
   "description": "",
   "scripts": {
     "build": "tsc",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node test/index.js"
   },
   "keywords": [],
   "author": "Martin Ždila",
   "license": "ISC",
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "devDependencies": {
+    "tape": "^5.6.0",
     "typescript": "^4.8.2"
   }
 }
