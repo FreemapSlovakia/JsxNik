@@ -5,7 +5,7 @@ Create [Mapnik](https://mapnik.org) configuration with [JSX](https://facebook.gi
 ## Usage
 
 1. create a new TypeScript project and install JsxNik (`npm i jsxnik`).
-1. Add following lines to your `tsconfig.js`:
+1. Add following lines to your `tsconfig.json`:
    ```json
    "jsx": "react-jsx",
    "jsxImportSource": "jsxnik"
