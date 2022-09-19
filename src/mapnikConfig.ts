@@ -1625,6 +1625,8 @@ export const PointSymbolizer = "PointSymbolizer" as unknown as (props: {
 }) => JSX.Element;
 
 export const TextSymbolizer = "TextSymbolizer" as unknown as (props: {
+  fontsetName?: string;
+
   /**
    * Allows omitting a text symbolizer rule.
    * Expression: false
