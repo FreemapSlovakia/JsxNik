@@ -17,7 +17,7 @@ Create [Mapnik](https://mapnik.org) configuration with [JSX](https://facebook.gi
 
    const mapnikConfig = serialize(
      <Map backgroundColor="blue">
-       <Datasource>
+       <Datasource name="db">
          <Parameter name="type">sqlite</Parameter>
          <Parameter name="file">map.sqlite</Parameter>
        </Datasource>
