@@ -412,6 +412,8 @@ export const PolygonSymbolizer = "PolygonSymbolizer" as unknown as (props: {
     | "visvalingam-whyatt"
     | "douglas-peucker";
 
+  smoothAalgorithm?: "string" | "adaptive" | "basic" | "";
+
   /**
    * Smooths out geometry angles. 0 is no smoothing, 1 is fully smoothed. Values greater than 1 will produce wild, looping geometries.
    * Expression: true
@@ -562,6 +564,8 @@ export const LineSymbolizer = "LineSymbolizer" as unknown as (props: {
     | "zhao-saalfeld"
     | "visvalingam-whyatt"
     | "douglas-peucker";
+
+  smoothAalgorithm?: "string" | "adaptive" | "basic" | "";
 
   /**
    * Smooths out geometry angles. 0 is no smoothing, 1 is fully smoothed. Values greater than 1 will produce wild, looping geometries.
@@ -794,6 +798,8 @@ export const MarkersSymbolizer = "MarkersSymbolizer" as unknown as (props: {
     | "zhao-saalfeld"
     | "visvalingam-whyatt"
     | "douglas-peucker";
+
+  smoothAalgorithm?: "string" | "adaptive" | "basic" | "";
 
   /**
    * Smooths out geometry angles. 0 is no smoothing, 1 is fully smoothed. Values greater than 1 will produce wild, looping geometries.
@@ -1211,6 +1217,8 @@ export const ShieldSymbolizer = "ShieldSymbolizer" as unknown as (props: {
     | "visvalingam-whyatt"
     | "douglas-peucker";
 
+  smoothAalgorithm?: "string" | "adaptive" | "basic" | "";
+
   /**
    * Smooths out the angles of the geometry used for shield placement. 0 is no smoothing, 1 is fully smoothed. Values greater than 1 will produce wild, looping geometries.
    * Expression: true
@@ -1309,6 +1317,8 @@ export const LinePatternSymbolizer =
       | "zhao-saalfeld"
       | "visvalingam-whyatt"
       | "douglas-peucker";
+
+    smoothAalgorithm?: "string" | "adaptive" | "basic" | "";
 
     /**
      * Smooths out geometry angles. 0 is no smoothing, 1 is fully smoothed. Values greater than 1 will produce wild, looping geometries.
@@ -1423,6 +1433,8 @@ export const PolygonPatternSymbolizer =
       | "zhao-saalfeld"
       | "visvalingam-whyatt"
       | "douglas-peucker";
+
+    smoothAalgorithm?: "string" | "adaptive" | "basic" | "";
 
     /**
      * Smooths out geometry angles. 0 is no smoothing, 1 is fully smoothed. Values greater than 1 will produce wild, looping geometries.
@@ -2001,6 +2013,8 @@ export const TextSymbolizer = "TextSymbolizer" as unknown as (props: {
     | "zhao-saalfeld"
     | "visvalingam-whyatt"
     | "douglas-peucker";
+
+  smoothAalgorithm?: "string" | "adaptive" | "basic" | "";
 
   /**
    * Smooths out the angles of the geometry used for text placement. 0 is no smoothing, 1 is fully smoothed. Values greater than 1 will produce wild, looping geometries.
