@@ -2992,6 +2992,8 @@ export const GroupSymbolizer = "GroupSymbolizer" as unknown as (props: {
    * Default value: true
    */
    largest_bbox_only?: boolean | string;
+
+   children: JSX.Element;
 }) => JSX.Element;
 
 export const SimpleLayout = "SimpleLayout" as unknown as (props: {
@@ -3004,10 +3006,12 @@ export const PairLayout = "PairLayout" as unknown as (props: {
 
 export const GroupRule = "GroupRule" as unknown as (props: {
   repeatKey?: string;
+  children: JSX.Element;
 }) => JSX.Element;
 
 export const FileSource = "FileSource" as unknown as (props: {
   name?: string;
+  children: JSX.Element;
 }) => JSX.Element;
 
 
