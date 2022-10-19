@@ -31,6 +31,14 @@ export const Filter = "Filter" as unknown as (props: {
   children: JSX.Element;
 }) => JSX.Element;
 
+export const ElseFilter = "ElseFilter" as unknown as (
+  props: Record<string, never>
+) => JSX.Element;
+
+export const AlsoFilter = "AlsoFilter" as unknown as (
+  props: Record<string, never>
+) => JSX.Element;
+
 export const StyleName = "StyleName" as unknown as (props: {
   children: JSX.Element;
 }) => JSX.Element;
@@ -876,7 +884,8 @@ export const MarkersSymbolizer = "MarkersSymbolizer" as unknown as (props: {
     | "line"
     | "interior"
     | "vertex-first"
-    | "vertex-last";
+    | "vertex-last"
+    | "angled-point";
 
   /**
    * A special setting to allow the user to control rendering behavior for 'multi-geometries' (when a feature contains multiple geometries). This setting does not apply to markers placed along lines. The 'each' policy is default and means all geometries will get a marker. The 'whole' policy means that the aggregate centroid between all geometries will be used. The 'largest' policy means that only the largest (by bounding box areas) feature will get a rendered marker (this is how text labeling behaves by default).
@@ -2155,6 +2164,8 @@ export const PointSymbolizer = "PointSymbolizer" as unknown as (props: {
 export const TextSymbolizer = "TextSymbolizer" as unknown as (props: {
   fontsetName?: string;
 
+  extend?: number | string;
+
   /**
    * Allows omitting a text symbolizer rule.
    *
@@ -2991,9 +3002,9 @@ export const GroupSymbolizer = "GroupSymbolizer" as unknown as (props: {
    *
    * Default value: true
    */
-   largest_bbox_only?: boolean | string;
+  largest_bbox_only?: boolean | string;
 
-   children: JSX.Element;
+  children: JSX.Element;
 }) => JSX.Element;
 
 export const SimpleLayout = "SimpleLayout" as unknown as (props: {
@@ -3013,7 +3024,6 @@ export const FileSource = "FileSource" as unknown as (props: {
   name?: string;
   children: JSX.Element;
 }) => JSX.Element;
-
 
 export type CompOp =
   | "clear"
