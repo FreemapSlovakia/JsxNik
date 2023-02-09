@@ -73,6 +73,8 @@ export const MaxScaleDenominator = "MaxScaleDenominator" as unknown as (props: {
 
 export const Placement = "Placement" as unknown as (props: {
   size?: number | string;
+  horizontalAlignment?: string | "left" | "middle" | "right" | "auto";
+  verticalAlignment?: string | "top" | "middle" | "bottom" | "auto";
   dx?: number | string;
   dy?: number | string;
   fill?: string;
