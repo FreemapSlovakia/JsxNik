@@ -15,7 +15,12 @@ export function jsx(
 
 export const jsxs = jsx;
 
+export function Fragment({ children }: { children: JSX.Element[] }) {
+  return children;
+}
+
 export default {
   jsx,
   jsxs,
+  Fragment,
 };
